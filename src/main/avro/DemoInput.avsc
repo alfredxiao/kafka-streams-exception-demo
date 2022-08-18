@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "DemoInput",
+  "namespace": "demo.model",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string"
+    },
+    {
+      "name": "request",
+      "type": {
+        "type": "enum",
+        "name": "RequestType",
+        "symbols" : ["NoException", "LargeMessage", "RuntimeException"]
+      }
+    }
+  ]
+}
